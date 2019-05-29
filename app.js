@@ -33,3 +33,17 @@ function jsonHandler(req, res) {
 	}
 	return res.json(messageObject);
 }
+/** 7) Root-level Middleware - A logger */
+//  place it before all the routes !
+
+/** 8) Chaining middleware. A Time server */
+
+/** 9)  Get input from client - Route parameters */
+
+/** 10) Get input from client - Query parameters */
+// /name?first=<firstname>&last=<lastname>
+
+/** 11) Get ready for POST Requests - the `body-parser` */
+// place it before all the routes !
+
+/** 12) Get data form POST  */
