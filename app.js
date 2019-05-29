@@ -21,3 +21,15 @@ app.use(express.static(__dirname + '/public'));
   res.json({"message": "Hello json"});
 })
 */
+/** 6) Use the .env file to configure the app */
+
+let messageObject = { message: 'Hello json' };
+
+app.get('/json', jsonHandler);
+
+function jsonHandler(req, res) {
+	if (process.env.MESSAGE_STYLE === 'uppercase') {
+		messageObject.message = messageObject.message.toUpperCase();
+	}
+	return res.json(messageObject);
+}
