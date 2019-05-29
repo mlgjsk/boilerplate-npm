@@ -47,3 +47,5 @@ function jsonHandler(req, res) {
 // place it before all the routes !
 
 /** 12) Get data form POST  */
+
+module.exports = app;
